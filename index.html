@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Afiliación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="card shadow">
+            <div class="card-header bg-white">
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <img src="img/FUMAVI_mejorada.png" class="img" alt="...">
+                        </div>
+                        <div class="col-auto">
+                            <label for="fechaafiliacion" class="form-label label">Fecha de Afiliación</label>
+                            <input type="date" class="form-control" id="fechaafiliacion" name="fechaafiliacionT"
+                                required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="text-center label">
+                    <span>Formulario Único de Inscripción Esta solicitud será estudiada y no tendrá efecto hasta su aprobación</span>
+                </div>
+            </div>
+            <br><br>
+            <div class="card-body">
+                <form id="afiliacionForm">
+                    <div class="container-fluid">
+                        <h4>I Titular</h4>
+                        <div class="container-fluid">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <label for="primerapellidoT" class="form-label label">Primer Apellido</label>
+                                    <input type="text" class="form-control input" id="primerapellidoT" name="apellido1T"
+                                        required>
+                                </div>
+                                <div class="col">
+                                    <label for="segundoapellidoT" class="form-label label">Segundo Apellido</label>
+                                    <input type="text" class="form-control input" id="segundoapellidoT"
+                                        name="apellido2T" required>
+                                </div>
+                                <div class="col">
+                                    <label for="nombres" class="form-label label">Nombres</label>
+                                    <input type="text" class="form-control input" id="nombres" name="nombresT" required>
+                                </div>
+                                <div class="col">
+                                    <label for="cedulaT" class="form-label label">Número de Documento</label>
+                                    <input type="text" class="form-control input" id="cedulaT" name="cedula" required>
+                                </div>
+                                <div class="col">
+                                    <label for="fechanacimientoT" class="form-label label">Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control input" id="fechanacimientoT"
+                                        name="fechanacimientoT" required>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="sexo" class="form-label label">Sexo</label>
+                                    <select class="form-select" id="sexo" name="sexo" required>
+                                        <option value="">Seleccione</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="estadoCivil" class="form-label label">Estado Civil</label>
+                                    <select class="form-select" id="estadoCivil" name="estadoCivil" required>
+                                        <option value="">Seleccione</option>
+                                        <option value="soltero">Soltero/a</option>
+                                        <option value="casado">Casado/a</option>
+                                        <option value="unionlibre">Unión Libre</option>
+                                        <option value="divorciado">Divorciado/a</option>
+                                        <option value="viudo">Viudo/a</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="celularT" class="form-label label">Teléfono o Celular</label>
+                                    <input type="text" class="form-control input" id="celularT" name="celular" required>
+                                </div>
+                                <div class="col">
+                                    <label for="emailT" class="form-label label">Correo Electrónico</label>
+                                    <input type="email" class="form-control input" id="emailT" name="emailT">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <label for="direccionT" class="form-label label">Dirección de residencia</label>
+                                        <input type="text" class="form-control input" id="direccionT" name="direccionT"
+                                            required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="departamentoT" class="form-label label">Departamento</label>
+                                        <select class="form-select" id="departamentoT" name="departamentoT"
+                                            style="width: 60%;" required>
+                                            <option value="">Seleccione</option>
+                                            <option value="Amazonas">Amazonas</option>
+                                            <option value="Antioquia">Antioquia</option>
+                                            <option value="Arauca">Arauca</option>
+                                            <option value="Atlántico">Atlántico</option>
+                                            <option value="Bolívar">Bolívar</option>
+                                            <option value="Boyacá">Boyacá</option>
+                                            <option value="Caldas">Caldas</option>
+                                            <option value="Caquetá">Caquetá</option>
+                                            <option value="Casanare">Casanare</option>
+                                            <option value="Cauca">Cauca</option>
+                                            <option value="Cesar">Cesar</option>
+                                            <option value="Chocó">Chocó</option>
+                                            <option value="Córdoba">Córdoba</option>
+                                            <option value="Cundinamarca">Cundinamarca</option>
+                                            <option value="Guainía">Guainía</option>
+                                            <option value="Guaviare">Guaviare</option>
+                                            <option value="Huila">Huila</option>
+                                            <option value="La Guajira">La Guajira</option>
+                                            <option value="Magdalena">Magdalena</option>
+                                            <option value="Meta">Meta</option>
+                                            <option value="Nariño">Nariño</option>
+                                            <option value="Norte de Santander">Norte de Santander</option>
+                                            <option value="Putumayo">Putumayo</option>
+                                            <option value="Quindío">Quindío</option>
+                                            <option value="Risaralda">Risaralda</option>
+                                            <option value="San Andrés y Providencia">San Andrés y Providencia
+                                            </option>
+                                            <option value="Santander">Santander</option>
+                                            <option value="Sucre">Sucre</option>
+                                            <option value="Tolima">Tolima</option>
+                                            <option value="Valle del Cauca">Valle del Cauca</option>
+                                            <option value="Vaupés">Vaupés</option>
+                                            <option value="Vichada">Vichada</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="ciudadT" class="form-label label">Ciudad</label>
+                                        <select class="form-select" id="ciudadT" name="ciudadT" style="width: 60%;" required>
+                                            <option value="">Seleccione</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="seguridadsocial" class="form-label label">Seguridad Social</label>
+                                        <select class="form-select" id="seguridadsocial" name="seguridadsocial"
+                                            style="width: 50%;" required>
+                                            <option value="">Seleccione</option>
+                                            <option value="Contributivo">Contributivo</option>
+                                            <option value="Subsidiado">Subsidiado</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="pension" class="form-label label">Pensionado</label>
+                                        <select class="form-select" id="pension" name="pension" style="width: 50%;"
+                                            required>
+                                            <option value="">Seleccione</option>
+                                            <option value="SI">SI</option>
+                                            <option value="NO">NO</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="eps" class="form-label label">EPS</label>
+                                        <input type="text" class="form-control input" id="eps" name="epsT"
+                                            style="width: 60%;" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="container-fluid">
+                        <h4>II Beneficiario</h4>
+                        <div class="container-fluid">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <label for="numbeneficiarios" class="form-label label">Número de Beneficiarios:</label>
+                                    <select id="numbeneficiarios" class="form-select" style="width: 10%;">
+                                        <option value="">Seleccione</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="tablaResultado"></div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="container-fluid">
+                        <h4>III Vinculación Laboral</h4>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="razonsocial" class="form-label label">Razón Social</label>
+                                    <input type="text" class="form-control input" id="razonsocial" name="razonsocial">
+                                </div>
+                                <div class="col">
+                                    <label for="nit" class="form-label label">NIT</label>
+                                    <input type="text" class="form-control input" id="nit" name="nit">
+                                </div>
+                                <div class="col">
+                                    <label for="telefonors" class="form-label label">Teléfono</label>
+                                    <input type="text" class="form-control input" id="telefono" name="telefonors">
+                                </div>
+                                <div class="col">
+                                    <label for="emailrs" class="form-label label">Correo Electrónico</label>
+                                    <input type="text" class="form-control input" id="emailrs" name="emailrs">
+                                </div>
+                                <div class="col">
+                                    <label for="direccionrs" class="form-label label">Dirección</label>
+                                    <input type="text" class="form-control input" id="direccionrs" name="direccionrs">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="departamentoT" class="form-label label">Departamento</label>
+                                            <select class="form-select" id="departamentoT" name="departamentors"
+                                                style="width: 60%;" required>
+                                                <option value="">Seleccione</option>
+                                                <option value="Amazonas">Amazonas</option>
+                                                <option value="Antioquia">Antioquia</option>
+                                                <option value="Arauca">Arauca</option>
+                                                <option value="Atlántico">Atlántico</option>
+                                                <option value="Bolívar">Bolívar</option>
+                                                <option value="Boyacá">Boyacá</option>
+                                                <option value="Caldas">Caldas</option>
+                                                <option value="Caquetá">Caquetá</option>
+                                                <option value="Casanare">Casanare</option>
+                                                <option value="Cauca">Cauca</option>
+                                                <option value="Cesar">Cesar</option>
+                                                <option value="Chocó">Chocó</option>
+                                                <option value="Córdoba">Córdoba</option>
+                                                <option value="Cundinamarca">Cundinamarca</option>
+                                                <option value="Guainía">Guainía</option>
+                                                <option value="Guaviare">Guaviare</option>
+                                                <option value="Huila">Huila</option>
+                                                <option value="La Guajira">La Guajira</option>
+                                                <option value="Magdalena">Magdalena</option>
+                                                <option value="Meta">Meta</option>
+                                                <option value="Nariño">Nariño</option>
+                                                <option value="Norte de Santander">Norte de Santander</option>
+                                                <option value="Putumayo">Putumayo</option>
+                                                <option value="Quindío">Quindío</option>
+                                                <option value="Risaralda">Risaralda</option>
+                                                <option value="San Andrés y Providencia">San Andrés y Providencia
+                                                </option>
+                                                <option value="Santander">Santander</option>
+                                                <option value="Sucre">Sucre</option>
+                                                <option value="Tolima">Tolima</option>
+                                                <option value="Valle del Cauca">Valle del Cauca</option>
+                                                <option value="Vaupés">Vaupés</option>
+                                                <option value="Vichada">Vichada</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <label for="ciudadT" class="form-label label">Ciudad</label>
+                                            <select class="form-select" id="ciudadT" name="ciudadT" style="width: 60%;">
+                                                <option value="">Seleccione</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <label for="asesor" class="form-label label">Nombre del Asesor</label>                                                
+                                            <input type="text" class="form-control input" id="asesor" name="asesor">
+                                        </div> 
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="text-center">
+                        <button type="submit" class="boton btn btn-success">Enviar Formulario</button>
+                    </div>
+                </form>
+                <div id="mensaje" class="mt-3 text-center fw-bold"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional para componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#afiliacionForm').on('submit', function (e) {
+                e.preventDefault();
+                let valid = true;
+
+                //Revisar campos y validat
+                $('#afiliacionForm input, #afiliacionForm select').each(function () {
+                    if ($(this).val() === '') {
+                        valid = false;
+                        $(this).addClass('is-invalid');
+                    } else {
+                        $(this).removeClass('is-invalid').addClass('is-valid');
+                    }
+                });
+
+                if (valid) {
+                    $('#mensaje').text('Formulario enviado correctamente ✅').css('color', 'green');
+                } else {
+                    $('#mensaje').text('Por favor, complete todos los campos ❌').css('color', 'red');
+                }
+            });
+
+            //tabla de beneficiarios
+            $('#numbeneficiarios').on('change', function () {
+                const cantidad = parseInt($(this).val());
+                if (!cantidad || cantidad < 1 || cantidad > 10) {
+                    alert('Seleccione una cantidad válida entre 1 y 10');
+                    return;
+                }
+
+                let tabla = `
+                <table class="table table-bordered table-striped mt-4">
+                    <thead class="table-success text-center">
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombres y Apellidos</th>
+                            <th>Sexo</th>
+                            <th>Fecha Nacimiento</th>
+                            <th>Parentesco</th>
+                            <th>Dirección</th>
+                            <th>Municipio</th>
+                            <th>Zona</th>
+                            <th>Celular</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                `;
+
+                for (let i = 1; i <= cantidad; i++) {
+                    tabla += `
+                        <tr>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td>
+                                <select class="form-select">
+                                    <option value="">...</option>
+                                    <option value="masculino">M</option>
+                                    <option value="femenino">F</option>
+                                </select>
+                            </td>
+                            <td><input type="date" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td>                        
+                                <select class="form-select">
+                                    <option value="">...</option>
+                                    <option value="urbana">U</option>
+                                    <option value="rural">R</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                    `;
+                }
+
+                tabla += '</tbody></table>';
+                $('#tablaResultado').html(tabla);
+            });
+
+            //selecciona ciudad por depto
+            $(document).ready(function () {
+                const ciudadesxDpto = {
+                    "Amazonas": ["Leticia", "El Encanto", "La Chorrera", "La Pedrera", "La Victoria", "Miriti - Paraná", "Puerto Alegría", "Puerto Arica", "Puerto Nariño", "Puerto Santander", "Tarapacá"],
+                    "Antioquia": ["Abejorral", "Abriaquí", "Alejandría", "Amagá", "Amalfi", "Andes", "Angelópolis", "Angostura", "Anorí", "Santafé de Antioquia", "Anzá", "Apartadó", "Arboletes", "Argelia", "Armenia", "Barbosa", "Bello", "Belmira", "Betania", "Betulia", "Briceño", "Buriticá", "Cáceres", "Caicedo", "Caldas", "Campamento", "Cañasgordas", "Caracolí", "Caramanta", "Carepa", "Carolina", "Caucasia", "Chigorodó", "Cisneros", "Cocorná", "Concepción", "Concordia", "Copacabana", "Dabeiba", "Donmatías", "Ebéjico", "El Bagre", "Entrerríos", "Envigado", "Fredonia", "Frontino", "Giraldo", "Girardota", "Gómez Plata", "Granada", "Guadalupe", "Guarne", "Guatapé", "Heliconia", "Hispania", "Itagüí", "Ituango", "Jardín", "Jericó", "La Ceja", "La Estrella", "La Pintada", "La Unión", "Liborina", "Maceo", "Marinilla", "Medellín", "Montebello", "Murindó", "Mutatá", "Nariño", "Nechí", "Necoclí", "Olaya", "Peñol", "Peque", "Pueblorrico", "Puerto Berrío", "Puerto Nare", "Puerto Triunfo", "Remedios", "Retiro", "Rionegro", "Sabanalarga", "Sabaneta", "Salgar", "San Andrés de Cuerquia", "San Carlos", "San Francisco", "San Jerónimo", "San José de la Montaña", "San Juan de Urabá", "San Luis", "San Pedro de los Milagros", "San Pedro de Urabá", "San Rafael", "San Roque", "San Vicente", "Santa Bárbara", "Santa Rosa de Osos", "Santo Domingo", "Segovia", "Sonsón", "Sopetrán", "Támesis", "Tarazá", "Tarso", "Titiribí", "Toledo", "Turbo", "Uramita", "Urrao", "Valdivia", "Valparaíso", "Vegachí", "Venecia", "Vigía del Fuerte", "Yalí", "Yarumal", "Yolombó", "Yondó", "Zaragoza"],
+                    "Arauca": ["Arauca", "Arauquita", "Cravo Norte", "Fortul", "Puerto Rondón", "Saravena", "Tame"],
+                    "Atlántico": ["Baranoa", "Barranquilla", "Campo de la Cruz", "Candelaria", "Galapa", "Juan de Acosta", "Luruaco", "Malambo", "Manatí", "Palmar de Varela", "Piojó", "Polonuevo", "Ponedera", "Puerto Colombia", "Repelón", "Sabanagrande", "Sabanalarga", "Santa Lucía", "Santo Tomás", "Soledad", "Suán", "Tubará", "Usiacurí"],
+                    "Bolívar": ["Achí", "Altos del Rosario", "Arenal", "Arjona", "Arroyohondo", "Barranco de Loba", "Brazuelo de Papayal", "Calamar", "Cantagallo", "Cartagena de Indias", "Cicuco", "Clemencia", "Córdoba", "El Carmen de Bolívar", "El Guamo", "El Peñón", "Hatillo de Loba", "Magangué", "Mahates", "Margarita", "María La Baja", "Mompós", "Montecristo", "Morales", "Norosí", "Pinillos", "Regidor", "Río Viejo", "San Cristóbal", "San Estanislao", "San Fernando", "San Jacinto", "San Jacinto del Cauca", "San Juan Nepomuceno", "San Martín de Loba", "San Pablo", "Santa Catalina", "Santa Rosa", "Santa Rosa del Sur", "Simití", "Soplaviento", "Talaigua Nuevo", "Tiquisio", "Turbaco", "Turbaná", "Villanueva", "Zambrano"],
+                    "Boyacá": ["Almeida", "Aquitania", "Arcabuco", "Belén", "Berbeo", "Betéitiva", "Boavita", "Boyacá", "Briceño", "Buenavista", "Busbanzá", "Caldas", "Campohermoso", "Cerinza", "Chinavita", "Chiquinquirá", "Chiscas", "Chita", "Chitaraque", "Chivatá", "Chíquiza", "Chivor", "Ciénega", "Cómbita", "Coper", "Corrales", "Covarachía", "Cubará", "Cucaita", "Cuítiva", "Duitama", "El Cocuy", "El Espino", "Firavitoba", "Floresta", "Gachantivá", "Gameza", "Garagoa", "Guacamayas", "Guateque", "Guayatá", "Güicán", "Iza", "Jenesano", "Jericó", "La Capilla", "La Uvita", "La Victoria", "Labranzagrande", "Macanal", "Maripí", "Miraflores", "Mongua", "Monguí", "Moniquirá", "Motavita", "Muzo", "Nobsa", "Nuevo Colón", "Oicatá", "Otanche", "Pachavita", "Páez", "Paipa", "Pajarito", "Panqueba", "Pauna", "Paya", "Paz de Río", "Pesca", "Pisba", "Puerto Boyacá", "Quípama", "Ramiriquí", "Ráquira", "Rondón", "Saboyá", "Sáchica", "Samacá", "San Eduardo", "San José de Pare", "San Luis de Gaceno", "San Mateo", "San Miguel de Sema", "San Pablo de Borbur", "Santa María", "Santa Rosa de Viterbo", "Santa Sofía", "Santana", "Sativanorte", "Sativasur", "Siachoque", "Soatá", "Socha", "Socotá", "Sogamoso", "Somondoco", "Sora", "Soracá", "Sotaquirá", "Susacón", "Sutamarchán", "Sutatenza", "Tasco", "Tenza", "Tibaná", "Tibasosa", "Tinjacá", "Tipacoque", "Toca", "Togüí", "Tópaga", "Tota", "Tunja", "Tununguá", "Turmequé", "Tuta", "Tutazá", "Úmbita", "Ventaquemada", "Villa de Leyva", "Viracachá", "Zetaquira"],
+                    "Caldas": ["Aguadas", "Anserma", "Aranzazu", "Belalcázar", "Chinchiná", "Filadelfia", "La Dorada", "La Merced", "Manizales", "Manzanares", "Marmato", "Marquetalia", "Marulanda", "Neira", "Norcasia", "Pácora", "Palestina", "Pensilvania", "Riosucio", "Risaralda", "Salamina", "Samaná", "San José", "Supía", "Victoria", "Villamaría", "Viterbo"],
+                    "Caquetá": ["Albania", "Belén de los Andaquíes", "Cartagena del Chairá", "Curillo", "El Doncello", "El Paujil", "Florencia", "La Montañita", "Milán", "Morelia", "Puerto Rico", "San José del Fragua", "San Vicente del Caguán", "Solano", "Solita", "Valparaíso"],
+                    "Casanare": ["Aguazul", "Chámeza", "Hato Corozal", "La Salina", "Maní", "Monterrey", "Nunchía", "Orocué", "Paz de Ariporo", "Pore", "Recetor", "Sabanalarga", "Sácama", "San Luis de Palenque", "Támara", "Tauramena", "Trinidad", "Villanueva", "Yopal"],
+                    "Cauca": ["Almaguer", "Argelia", "Balboa", "Bolívar", "Buenos Aires", "Cajibío", "Caldono", "Caloto", "Corinto", "El Tambo", "Florencia", "Guachené", "Guapí", "Inzá", "Jambaló", "La Sierra", "La Vega", "López de Micay", "Mercaderes", "Miranda", "Morales", "Padilla", "Páez", "Patía", "Piamonte", "Piendamó", "Popayán", "Puerto Tejada", "Puracé", "Rosas", "San Sebastián", "Santa Rosa", "Santander de Quilichao", "Silvia", "Sotará", "Suárez", "Sucre", "Timbío", "Timbiquí", "Toribío", "Totoró", "Villa Rica"],
+                    "Cesar": ["Aguachica", "Agustín Codazzi", "Astrea", "Becerril", "Bosconia", "Chimichagua", "Chiriguaná", "Curumaní", "El Copey", "El Paso", "Gamarra", "González", "La Gloria", "La Jagua de Ibirico", "La Paz", "Manaure Balcón del Cesar", "Pailitas", "Pelaya", "Pueblo Bello", "Río de Oro", "San Alberto", "San Diego", "San Martín", "Tamalameque", "Valledupar"],
+                    "Chocó": ["Acandí", "Alto Baudó", "Atrato", "Bagadó", "Bahía Solano", "Bajo Baudó", "Bojayá", "Cértegui", "Condoto", "El Cantón del San Pablo", "El Carmen de Atrato", "El Litoral del San Juan", "Istmina", "Juradó", "Lloró", "Medio Atrato", "Medio Baudó", "Medio San Juan", "Nóvita", "Nuquí", "Quibdó", "Río Iró", "Río Quito", "Riosucio", "San José del Palmar", "Sipí", "Tadó", "Unguía", "Unión Panamericana"],
+                    "Córdoba": ["Ayapel", "Buenavista", "Canalete", "Cereté", "Chimá", "Chinú", "Ciénaga de Oro", "Cotorra", "La Apartada", "Lorica", "Los Córdobas", "Momil", "Montelíbano", "Montería", "Moñitos", "Planeta Rica", "Pueblo Nuevo", "Puerto Escondido", "Puerto Libertador", "Purísima", "Sahagún", "San Andrés de Sotavento", "San Antero", "San Bernardo del Viento", "San Carlos", "San José de Uré", "San Pelayo", "Tierralta", "Tuchín", "Valencia"],
+                    "Cundinamarca": ["Agua de Dios", "Albán", "Anapoima", "Anolaima", "Apulo", "Arbeláez", "Beltrán", "Bituima", "Bojacá", "Cabrera", "Cachipay", "Cajicá", "Caparrapí", "Cáqueza", "Carmen de Carupa", "Chaguaní", "Chía", "Chipaque", "Choachí", "Chocontá", "Cogua", "Cota", "Cucunubá", "El Colegio", "El Peñón", "El Rosal", "Facatativá", "Fómeque", "Fosca", "Funza", "Fúquene", "Fusagasugá", "Gachalá", "Gachancipá", "Gachetá", "Gama", "Girardot", "Granada", "Guachetá", "Guaduas", "Guasca", "Guataquí", "Guatavita", "Guayabal de Síquima", "Guayabetal", "Gutiérrez", "Jerusalén", "Junín", "La Calera", "La Mesa", "La Palma", "La Peña", "La Vega", "Lenguazaque", "Macheta", "Madrid", "Manta", "Medina", "Mosquera", "Nariño", "Nemocón", "Nilo", "Nimaima", "Nocaima", "Pacho", "Paime", "Pandi", "Paratebueno", "Pasca", "Puerto Salgar", "Pulí", "Quebradanegra", "Quetame", "Quipile", "Ricaurte", "San Antonio del Tequendama", "San Bernardo", "San Cayetano", "San Francisco", "San Juan de Río Seco", "Sasaima", "Sesquilé", "Sibaté", "Silvania", "Simijaca", "Soacha", "Sopó", "Subachoque", "Suesca", "Supatá", "Susa", "Sutatausa", "Tabio", "Tausa", "Tena", "Tenjo", "Tibacuy", "Tibirita", "Tocaima", "Tocancipá", "Topaipí", "Ubalá", "Ubaque", "Ubaté", "Une", "Útica", "Venecia", "Vergara", "Vianí", "Villagómez", "Villapinzón", "Villeta", "Viotá", "Yacopí", "Zipacón", "Zipaquirá"],
+                    "Guainía": ["Inírida", "Barranco Minas", "Cacahual", "La Guadalupe", "Mapiripana", "Morichal Nuevo", "Pana Pana", "Puerto Colombia", "San Felipe"],
+                    "Guaviare": ["San José del Guaviare", "Calamar", "El Retorno", "Miraflores"],
+                    "Huila": ["Acevedo", "Agrado", "Aipe", "Algeciras", "Altamira", "Baraya", "Campoalegre", "Colombia", "Elías", "Garzón", "Gigante", "Guadalupe", "Hobo", "Iquira", "Isnos", "La Argentina", "La Plata", "Nátaga", "Neiva", "Oporapa", "Paicol", "Palermo", "Palestina", "Pital", "Pitalito", "Rivera", "Saladoblanco", "San Agustín", "Santa María", "Suaza", "Tarqui", "Tello", "Teruel", "Tesalia", "Timaná", "Villavieja", "Yaguará"],
+                    "La Guajira": ["Albania", "Barrancas", "Dibulla", "Distracción", "El Molino", "Fonseca", "Hatonuevo", "La Jagua del Pilar", "Maicao", "Manaure", "Riohacha", "San Juan del Cesar", "Uribia", "Urumita", "Villanueva"],
+                    "Magdalena": ["Algarrobo", "Aracataca", "Ariguaní", "Cerro San Antonio", "Chibolo", "Ciénaga", "Concordia", "El Banco", "El Piñón", "El Retén", "Fundación", "Guamal", "Nueva Granada", "Pedraza", "Pijiño del Carmen", "Pivijay", "Plato", "Puebloviejo", "Remolino", "Sabanas de San Ángel", "Salamina", "San Sebastián de Buenavista", "San Zenón", "Santa Ana", "Santa Bárbara de Pinto", "Santa Marta", "Sitionuevo", "Tenerife", "Zapayán", "Zona Bananera"],
+                    "Meta": ["Acacías", "Barranca de Upía", "Cabuyaro", "Castilla la Nueva", "Cubarral", "Cumaral", "El Calvario", "El Castillo", "El Dorado", "Fuente de Oro", "Granada", "Guamal", "La Macarena", "Lejanías", "Mapiripán", "Mesetas", "Puerto Concordia", "Puerto Gaitán", "Puerto Lleras", "Puerto López", "Puerto Rico", "Restrepo", "San Carlos de Guaroa", "San Juan de Arama", "San Juanito", "San Martín", "Uribe", "Villavicencio", "Vista Hermosa"],
+                    "Nariño": ["Aldana", "Ancuyá", "Arboleda", "Barbacoas", "Belén", "Buesaco", "Chachagüí", "Colón", "Consacá", "Contadero", "Córdoba", "Cuaspud", "Cumbal", "Cumbitara", "El Charco", "El Peñol", "El Rosario", "El Tablón de Gómez", "El Tambo", "Francisco Pizarro", "Funes", "Guachucal", "Guaitarilla", "Gualmatán", "Iles", "Imués", "Ipiales", "La Cruz", "La Florida", "La Llanada", "La Tola", "La Unión", "Leiva", "Linares", "Los Andes", "Magüí Payán", "Mallama", "Mosquera", "Nariño", "Olaya Herrera", "Ospina", "Pasto", "Policarpa", "Potosí", "Providencia", "Puerres", "Pupiales", "Ricaurte", "Roberto Payán", "Samaniego", "San Bernardo", "San Lorenzo", "San Pablo", "San Pedro de Cartago", "Sandoná", "Santa Bárbara", "Santacruz", "Sapuyes", "Taminango", "Tangua", "Tumaco", "Túquerres", "Yacuanquer"],
+                    "Norte de Santander": ["Ábrego", "Arboledas", "Bochalema", "Bucarasica", "Cáchira", "Cácota", "Chinácota", "Chitagá", "Convención", "Cúcuta", "Cucutilla", "Durania", "El Carmen", "El Tarra", "El Zulia", "Gramalote", "Hacarí", "Herrán", "La Esperanza", "La Playa", "Labateca", "Los Patios", "Lourdes", "Mutiscua", "Ocaña", "Pamplona", "Pamplonita", "Puerto Santander", "Ragonvalia", "Salazar", "San Calixto", "San Cayetano", "Santiago", "Sardinata", "Silos", "Teorama", "Tibú", "Toledo", "Villa Caro", "Villa del Rosario"],
+                    "Putumayo": ["Colón", "Mocoa", "Orito", "Puerto Asís", "Puerto Caicedo", "Puerto Guzmán", "Puerto Leguízamo", "San Francisco", "San Miguel", "Santiago", "Sibundoy", "Valle del Guamuez", "Villagarzón"],
+                    "Quindío": ["Armenia", "Buenavista", "Calarcá", "Circasia", "Córdoba", "Filandia", "Génova", "La Tebaida", "Montenegro", "Pijao", "Quimbaya", "Salento"],
+                    "Risaralda": ["Apía", "Balboa", "Belén de Umbría", "Dosquebradas", "Guática", "La Celia", "La Virginia", "Marsella", "Mistrató", "Pereira", "Pueblo Rico", "Quinchía", "Santa Rosa de Cabal", "Santuario"],
+                    "San Andrés y Providencia": ["San Andrés", "Providencia"],
+                    "Santander": ["Aguada", "Albania", "Aratoca", "Barbosa", "Barichara", "Barrancabermeja", "Betulia", "Bolívar", "Bucaramanga", "Cabrera", "California", "Capitanejo", "Carcasí", "Cepitá", "Cerrito", "Charalá", "Charta", "Chima", "Chipatá", "Cimitarra", "Concepción", "Confines", "Contratación", "Coromoro", "Curití", "El Carmen de Chucurí", "El Guacamayo", "El Peñón", "El Playón", "Encino", "Enciso", "Florián", "Floridablanca", "Galán", "Gámbita", "Girón", "Guaca", "Guadalupe", "Guapotá", "Guavatá", "Güepsa", "Hato", "Jesús María", "Jordán", "La Belleza", "La Paz", "Landázuri", "Lebríja", "Los Santos", "Macaravita", "Málaga", "Matanza", "Mogotes", "Molagavita", "Ocamonte", "Oiba", "Onzaga", "Palmar", "Palmas del Socorro", "Páramo", "Piedecuesta", "Pinchote", "Puente Nacional", "Puerto Parra", "Puerto Wilches", "Rionegro", "Sabana de Torres", "San Andrés", "San Benito", "San Gil", "San Joaquín", "San José de Miranda", "San Miguel", "San Vicente de Chucurí", "Santa Bárbara", "Santa Helena del Opón", "Simacota", "Socorro", "Suaita", "Sucre", "Suratá", "Tona", "Valle de San José", "Vélez", "Vetas", "Villanueva", "Zapatoca"],
+                    "Sucre": ["Aguachica", "Buenavista", "Caimito", "Chalán", "Colosó", "Corozal", "Coveñas", "El Roble", "Galeras", "Guaranda", "La Unión", "Los Palmitos", "Majagual", "Morroa", "Ovejas", "Palmito", "Sampués", "San Benito Abad", "San Juan de Betulia", "San Marcos", "San Onofre", "San Pedro", "Sincé", "Sincelejo", "Sucre", "Tolú", "Toluviejo"],
+                    "Tolima": ["Alpujarra", "Alvarado", "Ambalema", "Anzoátegui", "Armero", "Ataco", "Cajamarca", "Carmen de Apicalá", "Casabianca", "Chaparral", "Coello", "Coyaima", "Cunday", "Dolores", "Espinal", "Falan", "Flandes", "Fresno", "Guamo", "Herveo", "Honda", "Ibagué", "Icononzo", "Lérida", "Líbano", "Mariquita", "Melgar", "Murillo", "Natagaima", "Ortega", "Palocabildo", "Piedras", "Planadas", "Prado", "Purificación", "Rioblanco", "Roncesvalles", "Rovira", "Saldaña", "San Antonio", "San Luis", "Santa Isabel", "Suárez", "Valle de San Juan", "Venadillo", "Villahermosa", "Villarrica"],
+                    "Valle del Cauca": ["Alcalá", "Andalucía", "Ansermanuevo", "Argelia", "Bolívar", "Buenaventura", "Buga", "Bugalagrande", "Caicedonia", "Cali", "Calima", "Candelaria", "Cartago", "Dagua", "El Águila", "El Cairo", "El Cerrito", "El Dovio", "Florida", "Ginebra", "Guacarí", "Jamundí", "La Cumbre", "La Unión", "La Victoria", "Obando", "Palmira", "Pradera", "Restrepo", "Riofrío", "Roldanillo", "San Pedro", "Sevilla", "Toro", "Trujillo", "Tuluá", "Ulloa", "Versalles", "Vijes", "Yotoco", "Yumbo", "Zarzal"],
+                    "Vaupés": ["Carurú", "Mitú", "Taraira"],
+                    "Vichada": ["Cumaribo", "La Primavera", "Puerto Carreño", "Santa Rosalía"]
+                };
+
+                $('#departamentoT').on('change', function () {
+                    const departamentoT = $(this).val();
+                    const ciudadT = ciudadesxDpto[departamentoT] || [];
+                    let opciones = '<option value="">Seleccione</option>';
+                    ciudadT.forEach(ciudadT => {
+                        opciones += `<option value="${ciudadT}">${ciudadT}</option>`;
+                    });
+
+                    $('#ciudadT').html(opciones);
+                })
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>

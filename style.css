@@ -1,0 +1,30 @@
+.img{
+    width: 900px;
+    height: 300px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.label{
+    background: #00759C;
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.input{
+    border: 1px solid #42688A;
+    background: #dcfce7;
+}
+
+.boton {
+    background-color: #00759C;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
